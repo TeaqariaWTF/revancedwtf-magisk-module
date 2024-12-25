@@ -8,24 +8,17 @@ parallel-jobs = 1
 
 
 # dont build on gh actions (https://github.com/j-hc/revanced-magisk-module/issues/554)
-[Music-Extended]
-enabled = false
-app-name = "Music"
+[Music]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
 patches-source = "anddea/revanced-patches"
-cli-source = "anddea/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-arch = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+integrations-source = "anddea/revanced-integrations"
+rv-brand = "anddea ReVanced"
 
-[YouTube-Extended]
-enabled = false
-app-name = "YouTube"
+[YouTube]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "anddea/revanced-patches"
-cli-source = "anddea/revanced-cli"
-rv-brand = "ReVanced Extended"
-build-mode = "both"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
-# archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+integrations-source = "anddea/revanced-integrations"
+rv-brand = "anddea ReVanced"
+included-patches = "'Custom branding'"
+patcher-args = "-OappName=YouTube -OiconPath=MMT "
 
