@@ -25,6 +25,5 @@ apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
 patches-source = "anddea/revanced-patches"
 integrations-source = "anddea/revanced-integrations"
 rv-brand = "anddea ReVanced"
-included-patches = "'Custom branding'"
-patcher-args = "-OappName=YouTube -OiconPath=MMT "
-
+included-patches = "'Custom branding' 'Change header'"
+patcher-args = "-OappName=YouTube -OiconPath=MMT -Oheader=Premium "
